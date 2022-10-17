@@ -1,0 +1,16 @@
+{{define "index"}}
+<!DOCTYPE html>
+<html>
+    <head lang="ja">
+        <meta charset="UTF-8">
+        <title>GuestBook</title>
+    </head>
+    <body>
+        {{.Message}}
+        <form method="POST" action="/">
+            <input type="text" name="message">
+            <input type="submit" value="送信">
+        </form>
+    </body>
+</html>
+{{end}}
